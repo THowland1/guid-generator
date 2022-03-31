@@ -12,6 +12,7 @@ body {
     position: absolute;
     inset: 0;
     background-color: #303030;
+    touch-action: manipulation;
 }
 label {
     display: flex;
