@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUID GENERATOR</title>
+    <link rel="stylesheet" href="./checkmark.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <h1>GUID GENERATOR</h1>
+        <label class="container">
+          <input type="checkbox" checked="checked" id="uppercase" />
+          <span class="checkmark"></span>
+          uppercase
+        </label>
+        <label class="container">
+          <input type="checkbox" checked="checked" id="hyphens" />
+          <span class="checkmark"></span>
+          hyphens
+        </label>
+        <div>
+          <div class="counter">
+            <button id="count-dec">-</button>
+            <input id="count" type="number" value="5" />
+            <button id="count-inc">+</button>
+          </div>
+        </div>
+        <button id="generate">REFRESH</button>
+        <button id="clipboard">COPY ALL TO CLIPBOARD</button>
+        <button id="clipboard-one">COPY ONE TO CLIPBOARD</button>
+        <div id="copied-text"></div>
+      </div>
+      <textarea id="textarea"></textarea>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
